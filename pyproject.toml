@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pet-feed-reg-compliance"
+version = "1.0.0"
+description = "50-State Pet Feed Law Compliance Ops Engine"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml>=6.0",
+    "pydantic>=2.0",
+    "icalendar>=5.0",
+    "python-dateutil>=2.8",
+    "dnspython>=2.0"
+]
+
+[project.scripts]
+pet-feed-compliance = "pet_feed_reg_compliance.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

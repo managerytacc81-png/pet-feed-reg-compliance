@@ -1,0 +1,1255 @@
+version: "2026.1"
+last_updated: "2026-11-02"
+regulatory_source: "AAFCO 2023 Official Publication Regulatory Requirement Summary + State Department of Agriculture Live Feeds and Pet Food Registries"
+description: "Authoritative 50-state pet food, treat, and specialty pet food registration and commercial feed compliance database."
+
+states:
+  AL:
+    state_code: "AL"
+    name: "Alabama"
+    agency: "Alabama Department of Agriculture and Industries - Agricultural Chemistry Section"
+    website: "https://agi.alabama.gov/agricultural-chemistry/commercial-feed/"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 50.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 per brand for packages <=10 lbs if gross annual sales <=$5,000; $100 per brand if >$5,000. Exempts product from tonnage inspection fees."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.25
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Ala. Code § 2-21-25"
+    notes: "Quarterly tonnage reports due 30 days after quarter close (Jan 31, Apr 30, Jul 31, Oct 31)."
+
+  AK:
+    state_code: "AK"
+    name: "Alaska"
+    agency: "Alaska Department of Natural Resources - Division of Agriculture"
+    website: "https://dnr.alaska.gov/ag/"
+    requires_registration: false
+    registration_type: "exempt"
+    cycle: "exempt"
+    renewal_date: "None"
+    renewal_month: null
+    renewal_day: null
+    renewal_window_days: 0
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 0.0
+    small_package_rule: "Alaska does not regulate commercial feed or pet food at the state level. Federal FDA and truth-in-labeling laws apply."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "None (Federal FDA / FTC enforcement only)"
+    notes: "No state registration or tonnage filing required. General Alaska business license required."
+
+  AZ:
+    state_code: "AZ"
+    name: "Arizona"
+    agency: "Arizona Department of Agriculture - Environmental Services Division"
+    website: "https://agriculture.az.gov/plant-and-plant-products/feed-fertilizer-and-seed"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "optional_2yr"
+    facility_fee: 10.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$10 license per plant/firm. Products not registered individually; all sales subject to tonnage inspection fee."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.20
+    tonnage_min_fee: 2.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "A.R.S. § 3-2612"
+    notes: "Tonnage fee $0.20/ton with $2 minimum per quarter due end of month following quarter."
+
+  AR:
+    state_code: "AR"
+    name: "Arkansas"
+    agency: "Arkansas Department of Agriculture - Plant Board Feed Section"
+    website: "https://www.agriculture.arkansas.gov/plant-industries/feed-and-fertilizer-section/"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 10.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$10 annual facility license fee. Commercial feeds and pet foods pay $0.30/ton inspection fee with $10/quarter minimum."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.30
+    tonnage_min_fee: 10.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "Ark. Code Ann. § 2-37-111"
+    notes: "Quarterly tonnage reports required for all commercial distribution."
+
+  CA:
+    state_code: "CA"
+    name: "California"
+    agency: "California Department of Food and Agriculture (CDFA) - Feed and Livestock Drugs Inspection Program"
+    website: "https://www.cdfa.ca.gov/is/ffldrs/commercialfeed.html"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "pet_food_facility_biennial"
+    facility_fee: 500.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$500 per license per facility location per year. Pet food manufacturing facility license $220.21 per 2-year cycle."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.15
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "Cal. Food & Agric. Code § 15071"
+    notes: "Strict CDFA labeling audits and California Safe Drinking Water & Toxic Enforcement Act (Prop 65) compliance."
+
+  CO:
+    state_code: "CO"
+    name: "Colorado"
+    agency: "Colorado Department of Agriculture - Division of Plant Industry (Feed Program)"
+    website: "https://ag.colorado.gov/plants/feed"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "February 1"
+    renewal_month: 2
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 75.0
+    product_fee_small_pkg: 25.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$75 annual company registration fee plus $25 per product in packages <=10 lbs in lieu of tonnage."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.05
+    tonnage_min_fee: 50.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "C.R.S. § 35-60-110"
+    notes: "Tonnage fee is $0.05/ton dry, $0.025/ton wet (>60% moisture). Annual report due Jan 31."
+
+  CT:
+    state_code: "CT"
+    name: "Connecticut"
+    agency: "Connecticut Department of Agriculture - Bureau of Regulatory Services"
+    website: "https://portal.ct.gov/doag/regulatory/regulatory/commercial-feed"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 80.0
+    product_fee_large_pkg: 80.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$80 flat registration fee per pet food product per year. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Conn. Gen. Stat. § 22-118e"
+    notes: "Simple per-product registration; no tonnage inspection fee."
+
+  DE:
+    state_code: "DE"
+    name: "Delaware"
+    agency: "Delaware Department of Agriculture - Agricultural Products Inspection"
+    website: "https://agriculture.delaware.gov/food-products-inspection/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 23.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 per product for dog and cat food; $23 per brand for general livestock feed."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "3 Del. C. § 1709"
+    notes: "No tonnage report required for registered dog and cat products."
+
+  FL:
+    state_code: "FL"
+    name: "Florida"
+    agency: "Florida Department of Agriculture and Consumer Services (FDACS) - Division of Agricultural Environmental Services"
+    website: "https://www.fdacs.gov/Business-Services/Commercial-Feed"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 40.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "Master registration fee tiered by tonnage distributed: $40 (<25 tons), $100 (25-50 tons), scaling to $3,500."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "Fla. Stat. § 580.111"
+    notes: "Requires quarterly tonnage distribution affidavit even if fee is covered by master registration tier."
+
+  GA:
+    state_code: "GA"
+    name: "Georgia"
+    agency: "Georgia Department of Agriculture - Feed Section"
+    website: "https://agr.georgia.gov/feed"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 75.0
+    product_fee_small_pkg: 40.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$40 per pet and specialty pet food in 10-lb packages or less. Minimum facility fee $75."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 75.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "O.C.G.A. § 2-13-13"
+    notes: "Flat fee for <=10 lb packages eliminates tonnage reporting requirements."
+
+  HI:
+    state_code: "HI"
+    name: "Hawaii"
+    agency: "Hawaii Department of Agriculture - Feed and Fertilizer Program"
+    website: "https://hdoa.hawaii.gov/qad/feed-program/"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "permanent"
+    renewal_date: "Permanent"
+    renewal_month: null
+    renewal_day: null
+    renewal_window_days: 0
+    biennial_rule: "none"
+    facility_fee: 30.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$30 one-time permanent registration fee. Quarterly tonnage reporting at $0.40/ton mixed feed."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.40
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "HRS § 144-10"
+    notes: "Permanent registration license; quarterly tonnage reporting remains active indefinitely."
+
+  ID:
+    state_code: "ID"
+    name: "Idaho"
+    agency: "Idaho State Department of Agriculture (ISDA) - Division of Agricultural Inspections"
+    website: "https://agri.idaho.gov/main/feed-and-fertilizer/commercial-feed/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "October 1"
+    renewal_month: 10
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 40.0
+    product_fee_large_pkg: 40.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$40 per product annual registration fee. No tonnage reporting required for pet food."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Idaho Code § 22-2510"
+    notes: "Registration year runs Oct 1 to Sep 30."
+
+  IL:
+    state_code: "IL"
+    name: "Illinois"
+    agency: "Illinois Department of Agriculture - Bureau of Environmental Programs"
+    website: "https://agr.illinois.gov/pesticides/commercial-feed.html"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 30.0
+    product_fee_small_pkg: 90.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$30 facility license. $90 per product per year for pet or specialty pet food in packages <=10 lbs in lieu of tonnage fee."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.30
+    tonnage_min_fee: 25.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "505 ILCS 30/11"
+    notes: "Products >10 lbs report tonnage semiannually (Jan 1 and Jul 1) with $25 minimum."
+
+  IN:
+    state_code: "IN"
+    name: "Indiana"
+    agency: "Office of Indiana State Chemist (OISC) - Feed Program"
+    website: "https://oisc.purdue.edu/feed/"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 50.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 per firm license fee plus $50 per product for pet or specialty pet food in packages <=10 lbs (in lieu of tonnage)."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.40
+    tonnage_min_fee: 5.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Ind. Code § 15-19-7-29"
+    notes: "Products >10 lbs file quarterly tonnage ($0.40/ton, $5 min). Kelly Solutions portal."
+
+  IA:
+    state_code: "IA"
+    name: "Iowa"
+    agency: "Iowa Department of Agriculture and Land Stewardship (IDALS) - Commercial Feed & Fertilizer Bureau"
+    website: "https://iowaagriculture.gov/commercial-feed-and-fertilizer-bureau"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "facility_biennial_product_annual"
+    facility_fee: 20.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "Facility license is $20 for 2 years (biennial Jul 1). Product fee is $50 per product for pet food <=10 lbs (annual Jan 1) in lieu of tonnage."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.12
+    tonnage_min_fee: 20.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Iowa Code § 198.11"
+    notes: "Statutory authority mandates immediate statewide Stop Sale order for unregistered products."
+
+  KS:
+    state_code: "KS"
+    name: "Kansas"
+    agency: "Kansas Department of Agriculture - Division of Agricultural Services"
+    website: "https://agriculture.ks.gov/divisions-programs/agricultural-services/feed-safety"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 10.0
+    product_fee_small_pkg: 25.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$10 annual license fee. $25 per product for pet/specialty pet <=10 lbs; $15 for specialty pet <=1 lb. Large packages >10 lbs pay $0.09/ton."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.09
+    tonnage_min_fee: 15.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "K.S.A. § 2-1008"
+    notes: "Semiannual tonnage reports due Jan 1 and Jul 1."
+
+  KY:
+    state_code: "KY"
+    name: "Kentucky"
+    agency: "University of Kentucky - Division of Regulatory Services (Feed Program)"
+    website: "https://www.rs.uky.edu/regulatory/feed/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 per product annual registration for net wt <=10 lbs (in lieu of tonnage). Over 10 lbs has no product fee, but pays $0.35/ton quarterly."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.35
+    tonnage_min_fee: 25.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "KRS § 250.591"
+    notes: "Products >10 lbs submit quarterly tonnage with $25/quarter minimum."
+
+  LA:
+    state_code: "LA"
+    name: "Louisiana"
+    agency: "Louisiana Department of Agriculture and Forestry (LDAF) - Agricultural Chemistry Program"
+    website: "https://www.ldaf.la.gov/business/agricultural-chemistry"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 40.0
+    product_fee_small_pkg: 200.0
+    product_fee_large_pkg: 10.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$40 per firm annual facility fee. $200 per product annually for packages <=10 lbs in lieu of tonnage fee. Large pkg: $10 label fee + $1/ton."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 1.00
+    tonnage_min_fee: 10.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "La. R.S. § 3:1400"
+    notes: "Highest small-package flat fee ($200/product) but avoids $1.00/ton quarterly reporting."
+
+  ME:
+    state_code: "ME"
+    name: "Maine"
+    agency: "Maine Department of Agriculture, Conservation and Forestry - Division of Quality Assurance & Regulations"
+    website: "https://www.maine.gov/dacf/qar/commercial_feed/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 100.0
+    product_fee_large_pkg: 80.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$100 per pet food product; $80 per general commercial feed product. No tonnage fee."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "7 M.R.S. § 718"
+    notes: "Simple per-product registration; no tonnage inspection reports."
+
+  MD:
+    state_code: "MD"
+    name: "Maryland"
+    agency: "Maryland Department of Agriculture (MDA) - State Chemist Section"
+    website: "https://mda.maryland.gov/plants-pests/Pages/state_chemist.aspx"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "May 1"
+    renewal_month: 5
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 50.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 per product annual registration fee. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Md. Code, Agric. § 6-112"
+    notes: "May 1 annual renewal wave; submit labels with application."
+
+  MA:
+    state_code: "MA"
+    name: "Massachusetts"
+    agency: "Massachusetts Department of Agricultural Resources (MDAR) - Commercial Feed Program"
+    website: "https://www.mass.gov/commercial-feed-program"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 100.0
+    product_fee_large_pkg: 100.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$100 per product annual registration fee. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Mass. Gen. Laws ch. 128, § 60"
+    notes: "Annual Jan 1 renewal; product labels required with filing."
+
+  MI:
+    state_code: "MI"
+    name: "Michigan"
+    agency: "Michigan Department of Agriculture and Rural Development (MDARD) - Animal Feed Safety"
+    website: "https://www.michigan.gov/mdard/business-license-directory/commercial-feed"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 100.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 5.0
+    small_package_rule: "$100 mfgr/distributor license ($25 if only packages <=5 lbs). Packages <=5 lbs exempt from tonnage."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.30
+    tonnage_min_fee: 50.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "MCL § 287.531"
+    notes: "Packages >5 lbs pay $0.30/ton annual inspection fee with $50/yr minimum."
+
+  MN:
+    state_code: "MN"
+    name: "Minnesota"
+    agency: "Minnesota Department of Agriculture (MDA) - Commercial Feed Program"
+    website: "https://www.mda.state.mn.us/feed"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "facility_jan_product_jul"
+    facility_fee: 75.0
+    product_fee_small_pkg: 100.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$75 facility license (Jan 1). Product listing: $100 per pet/specialty pet food for packages <=10 lbs (Jul 1 renewal) in lieu of tonnage."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.16
+    tonnage_min_fee: 75.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Minn. Stat. § 25.42"
+    notes: "Split cycle: Facility license renews Jan 1; product listings renew Jul 1."
+
+  MS:
+    state_code: "MS"
+    name: "Mississippi"
+    agency: "Mississippi Department of Agriculture and Commerce (MDAC) - Feed Division"
+    website: "https://www.mdac.ms.gov/bureaus-departments/regulatory-services/feed/"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "December 1"
+    renewal_month: 12
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 100.0
+    product_fee_small_pkg: 25.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$100 facility registration. $25 per brand annually in lieu of tonnage fee for packages <=10 lbs."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.25
+    tonnage_min_fee: 20.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Miss. Code § 75-45-25"
+    notes: "December 1 annual renewal wave; packages >10 lbs pay $0.25/ton annual tonnage fee."
+
+  MO:
+    state_code: "MO"
+    name: "Missouri"
+    agency: "Missouri Department of Agriculture - Bureau of Feed and Seed"
+    website: "https://agriculture.mo.gov/plants/feed/"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 35.0
+    product_fee_small_pkg: 90.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$35 annual facility license. Small pkg (<=10 lbs): $90 per product if annual sales >$5k; $25 per product if <=$5k (in lieu of tonnage)."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.14
+    tonnage_min_fee: 5.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Mo. Rev. Stat. § 266.205"
+    notes: "Packages >10 lbs report quarterly at $0.14/ton ($5/quarter min)."
+
+  MT:
+    state_code: "MT"
+    name: "Montana"
+    agency: "Montana Department of Agriculture - Agricultural Sciences Division"
+    website: "https://agr.mt.gov/Feed"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 100.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 50.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$100 facility renewal ($100 new). Pet food registration $50 per product. Pet food is completely exempt from tonnage fees."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.18
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Mont. Code Ann. § 80-9-301"
+    notes: "Commercial pet food exempt from tonnage fees; only commercial livestock feed reports tonnage."
+
+  NE:
+    state_code: "NE"
+    name: "Nebraska"
+    agency: "Nebraska Department of Agriculture - Animal and Plant Health Protection"
+    website: "https://nda.nebraska.gov/plant/feed/index.html"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 15.0
+    product_fee_small_pkg: 25.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$15 distribution facility license. $25 per product in packages <=10 lbs in lieu of tonnage."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.065
+    tonnage_min_fee: 5.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Neb. Rev. Stat. § 54-857"
+    notes: "Packages >10 lbs report semiannually (Jan 1 and Jul 1) at $0.065/ton ($5 min)."
+
+  NV:
+    state_code: "NV"
+    name: "Nevada"
+    agency: "Nevada Department of Agriculture - Division of Plant Industry"
+    website: "https://agri.nv.gov/Plant/Feed/Feed_Home/"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 75.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$75 facility license per mfgr. Nevada does NOT register individual pet food products. All feeds pay quarterly tonnage fee."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.15
+    tonnage_min_fee: 5.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "NRS § 587.680"
+    notes: "Tonnage fee is $0.15/ton or $5 per quarter, whichever is greater ($20/yr minimum)."
+
+  NH:
+    state_code: "NH"
+    name: "New Hampshire"
+    agency: "New Hampshire Department of Agriculture, Markets & Food - Division of Regulatory Services"
+    website: "https://www.agriculture.nh.gov/divisions/regulatory-services/feed.htm"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 75.0
+    product_fee_large_pkg: 75.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$75 per product annual registration fee. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "N.H. Rev. Stat. § 435:28"
+    notes: "Label registration only; no state tonnage reporting."
+
+  NJ:
+    state_code: "NJ"
+    name: "New Jersey"
+    agency: "New Jersey Department of Agriculture - Division of Agricultural and Natural Resources"
+    website: "https://www.nj.gov/agriculture/divisions/anr/"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 250.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$250 annual facility license per manufacturing facility. Tonnage fee is $0.30/ton."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.30
+    tonnage_min_fee: 250.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "N.J. Stat. § 4:4-20.11"
+    notes: "Annual tonnage report with $250 minimum."
+
+  NM:
+    state_code: "NM"
+    name: "New Mexico"
+    agency: "New Mexico Department of Agriculture (NMDA) - Feed, Seed and Fertilizer Section"
+    website: "https://nmdeptag.nmsu.edu/feed-seed-fertilizer/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 27.0
+    product_fee_large_pkg: 2.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$2 registration fee per product regardless of size + $25 small package inspection fee per product (<=10 lbs) in lieu of tonnage."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.15
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "NMSA 1978, § 76-19-10"
+    notes: "Total small package product fee is $27 ($2 + $25). Large packages pay $2 + quarterly $0.15/ton."
+
+  NY:
+    state_code: "NY"
+    name: "New York"
+    agency: "New York State Department of Agriculture and Markets - Division of Food Safety & Inspection"
+    website: "https://agriculture.ny.gov/food-safety/commercial-feed"
+    requires_registration: true
+    registration_type: "product_and_facility"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "facility_biennial_product_annual"
+    facility_fee: 50.0
+    product_fee_small_pkg: 100.0
+    product_fee_large_pkg: 100.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$100 per brand pet food registration (annual Jan 1). NY commercial feed facility registration is $100 per 2-year cycle (biennial Jul 1)."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.10
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "N.Y. Agric. & Mkts. Law § 135-a"
+    notes: "Tonnage fee is $0.10/ton for >=100 tons; <100 tons exempt from tonnage fees."
+
+  NC:
+    state_code: "NC"
+    name: "North Carolina"
+    agency: "North Carolina Department of Agriculture and Consumer Services (NCDA&CS) - Food and Drug Protection Division"
+    website: "https://www.ncagr.gov/divisions/food-and-drug-protection/feed-program"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 40.0
+    product_fee_large_pkg: 5.0
+    small_package_threshold_lbs: 5.0
+    small_package_rule: "$40 per product in packages <=5 lbs (in lieu of tonnage). Feeds >5 lbs pay $5/product + $0.12/ton quarterly. Canned pet food: $12 + $0.03/case."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.12
+    tonnage_min_fee: 10.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "N.C. Gen. Stat. § 106-284.41"
+    notes: "Packages <=5 lbs exempt from quarterly tonnage report; strict 5-lb threshold."
+
+  ND:
+    state_code: "ND"
+    name: "North Dakota"
+    agency: "North Dakota Department of Agriculture - Livestock & Feed Division"
+    website: "https://www.ndda.nd.gov/divisions/livestock-development/commercial-feed"
+    requires_registration: true
+    registration_type: "product_and_facility"
+    cycle: "biennial"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "even_year_renewal"
+    facility_fee: 50.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 50.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "Pet and specialty pet: $120 new / $100 renewal per 2-year cycle ($50/yr equivalent). Tonnage: None for registered pet food."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "N.D. Cent. Code § 4.1-41-15"
+    notes: "Biennial cycle renewing on January 1 of even years (e.g. 2026, 2028). Retail license $50/2yr."
+
+  OH:
+    state_code: "OH"
+    name: "Ohio"
+    agency: "Ohio Department of Agriculture (ODA) - Division of Plant Industry (Feed Program)"
+    website: "https://agri.ohio.gov/divisions/plant-health/feed/"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "permanent"
+    renewal_date: "Permanent"
+    renewal_month: null
+    renewal_day: null
+    renewal_window_days: 0
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "Permanent facility registration (no renewal fee). Inspection fee: $0.25/ton, semiannual affidavit."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.25
+    tonnage_min_fee: 25.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "Ohio Rev. Code § 923.52"
+    notes: "Semiannual tonnage reports due Jan 31 and Jul 31 with $25 minimum."
+
+  OK:
+    state_code: "OK"
+    name: "Oklahoma"
+    agency: "Oklahoma Department of Agriculture, Food and Forestry (ODAFF) - Consumer Protection Services"
+    website: "https://ag.ok.gov/divisions/consumer-protection-services/"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 50.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 license per manufacturer/guarantor. Inspection fee $0.15/ton, semiannual reporting."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.15
+    tonnage_min_fee: 10.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "2 O.S. § 8-41.9"
+    notes: "Semiannual reports due Jan 31 and Jul 31 with $10 minimum."
+
+  OR:
+    state_code: "OR"
+    name: "Oregon"
+    agency: "Oregon Department of Agriculture (ODA) - Animal Health & Feeds"
+    website: "https://www.oregon.gov/oda/programs/marketaccess/commercialfeed/pages/commercialfeed.aspx"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 150.0
+    product_fee_small_pkg: 40.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "Manufacturer license varies $150-$750 by sales volume. Specialty pet food registration $40 per product (standard dog/cat food exempt if distributor licensed)."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "ORS § 633.045"
+    notes: "Standard dog and cat foods exempt from per-product fees if licensed entity distributes; specialty pets pay $40/product."
+
+  PA:
+    state_code: "PA"
+    name: "Pennsylvania"
+    agency: "Pennsylvania Department of Agriculture (PDA) - Bureau of Plant Industry"
+    website: "https://www.agriculture.pa.gov/Plants_Land_Water/PlantIndustry/FeedFertilizerSeed/Pages/default.aspx"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 25.0
+    product_fee_small_pkg: 0.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$25 license per guarantor and PA manufacturing facility. Inspection fee: $0.10/ton with $25/yr minimum."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.10
+    tonnage_min_fee: 25.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "3 Pa.C.S. § 5109"
+    notes: "Annual tonnage report due Jan 31; $25 annual license."
+
+  RI:
+    state_code: "RI"
+    name: "Rhode Island"
+    agency: "Rhode Island Department of Environmental Management (DEM) - Division of Agriculture"
+    website: "https://dem.ri.gov/agriculture/commercial-feed.php"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 60.0
+    product_fee_large_pkg: 60.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$60 per product annual registration fee. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "R.I. Gen. Laws § 4-2-12"
+    notes: "Straightforward annual product registration; no tonnage reports."
+
+  SC:
+    state_code: "SC"
+    name: "South Carolina"
+    agency: "Clemson University - Department of Plant Industry (Regulatory Services)"
+    website: "https://www.clemson.edu/public/regulatory/plant-industry/feed/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 20.0
+    product_fee_large_pkg: 20.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$20 per product annual registration fee. Late fee of $10 per product after 15 working days. No tonnage report."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "S.C. Code Ann. § 46-27-410"
+    notes: "Clemson Regulatory Services oversees feed law; low fee ($20/SKU) but strict late penalty."
+
+  SD:
+    state_code: "SD"
+    name: "South Dakota"
+    agency: "South Dakota Department of Agriculture and Natural Resources (DANR) - Feed Program"
+    website: "https://danr.sd.gov/Agriculture/Inspection/Feed/default.aspx"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "facility_biennial_product_annual"
+    facility_fee: 25.0
+    product_fee_small_pkg: 99.0
+    product_fee_large_pkg: 99.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "Facility license is $50 per 2-year cycle ($25/yr). Product registration is $99 per pet/specialty pet product annually in lieu of tonnage."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "SDCL § 39-14-67"
+    notes: "Registered pet food exempt from bulk $0.10/ton fee."
+
+  TN:
+    state_code: "TN"
+    name: "Tennessee"
+    agency: "Tennessee Department of Agriculture - Consumer and Industry Services (Feed Program)"
+    website: "https://www.tn.gov/agriculture/businesses/animals/feed.html"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 50.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 minimum facility license. Small packages <=10 lbs pay $50 per product in lieu of tonnage."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 50.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Tenn. Code Ann. § 44-6-110"
+    notes: "Tonnage fee on packages <=10 lbs eliminated by paying $50 product fee."
+
+  TX:
+    state_code: "TX"
+    name: "Texas"
+    agency: "Office of the Texas State Chemist (OTSC) - Texas Feed and Fertilizer Control Service"
+    website: "https://otscweb.tamu.edu/"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "September 1"
+    renewal_month: 9
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 75.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 5.0
+    small_package_rule: "$75 permanent facility license. $50 per product annually for packages <=5 lbs in lieu of tonnage. Packages >5 lbs pay $0.19/ton."
+    tonnage_cadence: "quarterly"
+    tonnage_fee_per_ton: 0.19
+    tonnage_min_fee: 100.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Tex. Agric. Code § 141.121"
+    notes: "Texas enforces a strict 5-lb threshold (packages 5.1-10 lbs must pay $0.19/ton tonnage)."
+
+  UT:
+    state_code: "UT"
+    name: "Utah"
+    agency: "Utah Department of Agriculture and Food (UDAF) - Division of Plant Industry"
+    website: "https://ag.utah.gov/farmers/plants-industry/feed-program/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 60.0
+    product_fee_large_pkg: 60.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$60 per product registration per calendar year. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Utah Code § 4-12-108"
+    notes: "Simple per-product registration; blenders pay $75 facility license."
+
+  VT:
+    state_code: "VT"
+    name: "Vermont"
+    agency: "Vermont Agency of Agriculture, Food and Markets (VAAFM) - Public Health & Agricultural Resource Management"
+    website: "https://agriculture.vermont.gov/feed-seed-fertilizer/feed"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "April 1"
+    renewal_month: 4
+    renewal_day: 1
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 105.0
+    product_fee_large_pkg: 105.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$105 per feed/feed supplement product. $35 per product dosage form. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "6 V.S.A. § 333"
+    notes: "April 1 renewal wave; highest northeast fee at $105/product."
+
+  VA:
+    state_code: "VA"
+    name: "Virginia"
+    agency: "Virginia Department of Agriculture and Consumer Services (VDACS) - Office of Plant Industry Services"
+    website: "https://www.vdacs.virginia.gov/plant-industry-services-feed.shtml"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 50.0
+    product_fee_small_pkg: 50.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 facility license. Packages <=10 lbs pay $50 per brand in lieu of tonnage fee. Large pkgs pay $0.07/ton ($35 min)."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.07
+    tonnage_min_fee: 35.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Va. Code Ann. § 3.2-4804"
+    notes: "Aggressive enforcement: state routinely issues Stop Sale orders under § 3.2-4804 for unregistered brands."
+
+  WA:
+    state_code: "WA"
+    name: "Washington"
+    agency: "Washington State Department of Agriculture (WSDA) - Animal Feed Program"
+    website: "https://agr.wa.gov/departments/animals-livestock-and-pets/animal-feed"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "biennial"
+    renewal_date: "July 1"
+    renewal_month: 7
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "odd_year_renewal"
+    facility_fee: 50.0
+    product_fee_small_pkg: 45.0
+    product_fee_large_pkg: 22.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$50 annual facility license. Pet/specialty pet <=10 lbs is $90 per 2-year cycle ($45/yr). Over 10 lbs is $22/yr plus $0.12/ton."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.12
+    tonnage_min_fee: 25.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "RCW 15.53.9038"
+    notes: "Small package pet food registration is biennial on July 1 cycle; bulk feed pays $0.12/ton semiannually."
+
+  WV:
+    state_code: "WV"
+    name: "West Virginia"
+    agency: "West Virginia Department of Agriculture (WVDA) - Regulatory and Environmental Affairs"
+    website: "https://agriculture.wv.gov/divisions/regulatory-and-environmental-affairs/"
+    requires_registration: true
+    registration_type: "facility_and_product"
+    cycle: "annual"
+    renewal_date: "August 31"
+    renewal_month: 8
+    renewal_day: 31
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 50.0
+    product_fee_small_pkg: 75.0
+    product_fee_large_pkg: 100.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "Commercial feed permit $50 (expires Dec 31). Pet food registration: $75 per product <=10 lbs; $100 per product >10 lbs (expires Aug 31). Specialty pet $40."
+    tonnage_cadence: "semiannual"
+    tonnage_fee_per_ton: 0.35
+    tonnage_min_fee: 25.0
+    small_pkg_tonnage_exempt: false
+    stop_sale_authority: "W. Va. Code § 19-14-11"
+    notes: "Split renewal dates: Facility permits expire Dec 31; pet food product registrations expire Aug 31. Strict immediate stop-sale & embargo authority."
+
+  WI:
+    state_code: "WI"
+    name: "Wisconsin"
+    agency: "Wisconsin Department of Agriculture, Trade and Consumer Protection (DATCP) - Division of Agricultural Resource Management"
+    website: "https://datcp.wi.gov/Pages/Programs_Services/CommercialFeed.aspx"
+    requires_registration: true
+    registration_type: "facility_license"
+    cycle: "annual"
+    renewal_date: "February 28"
+    renewal_month: 2
+    renewal_day: 28
+    renewal_window_days: 45
+    biennial_rule: "none"
+    facility_fee: 25.0
+    product_fee_small_pkg: 100.0
+    product_fee_large_pkg: 0.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$25 license for out-of-state facility. Tonnage: $0.25/ton or $50 min. Small package flat fee option: $100 per product in lieu of tonnage."
+    tonnage_cadence: "annual"
+    tonnage_fee_per_ton: 0.25
+    tonnage_min_fee: 50.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Wis. Stat. § 94.72(13)"
+    notes: "Annual renewal due Feb 28-29; annual tonnage affidavit."
+
+  WY:
+    state_code: "WY"
+    name: "Wyoming"
+    agency: "Wyoming Department of Agriculture - Technical Services Division"
+    website: "https://agriculture.wy.gov/divisions/tsd/feed/"
+    requires_registration: true
+    registration_type: "product"
+    cycle: "annual"
+    renewal_date: "January 1"
+    renewal_month: 1
+    renewal_day: 1
+    renewal_window_days: 60
+    biennial_rule: "none"
+    facility_fee: 0.0
+    product_fee_small_pkg: 40.0
+    product_fee_large_pkg: 40.0
+    small_package_threshold_lbs: 10.0
+    small_package_rule: "$40 per product annual registration fee. No tonnage reporting required."
+    tonnage_cadence: "none"
+    tonnage_fee_per_ton: 0.0
+    tonnage_min_fee: 0.0
+    small_pkg_tonnage_exempt: true
+    stop_sale_authority: "Wyo. Stat. Ann. § 11-13-108"
+    notes: "Annual Jan 1 renewal; product labels required."
